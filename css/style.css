@@ -215,12 +215,21 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: ArmNo
    ========================================================================== */
+body {
+  color: #333;
+  margin: auto;
+  max-width: 960px;
+}
 
+body > header {
+    text-align: center;
+}
 
-
-
+body > header p {
+    color: #999;
+}
 
 
 
