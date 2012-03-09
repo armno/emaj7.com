@@ -222,12 +222,27 @@ body {
   margin: auto;
   max-width: 960px;
     text-align: center;
+    position: relative;
+}
 
+body > header {
+	position: absolute;
+	color: rgba(0,0,0,0.1);
+	z-index: 2;
+	font-size: 100px;
+	top: -165px;
+	left: 80px;
+}
+
+.main {
+	padding-top: 100px;
+	z-index: 1;
 }
 
 figure {
     margin-bottom: 40px;
     min-height:280px;
+    position: relative;
 }
 
 figcaption, p {
@@ -239,9 +254,14 @@ img {
 }
 
 figcaption {
-    margin-top: 10px;
-    color: #acacac;
-    font: italic 13px serif;
+    display: block;
+	position: absolute;
+	right: 25%;
+	bottom: 0;
+	color: rgba(255,255,255,0.5);
+	font-family: sans-serif;
+	font-size: 40px;
+    z-index: 2;
 }
 
 /*http://webdesignerwall.com/tutorials/css3-image-styles-part-2*/
